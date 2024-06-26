@@ -1,0 +1,107 @@
+ackage com.cwds.cares.salesforce.seleniumautomation.common;
+
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import com.cwds.cares.salesforce.seleniumautomation.constants.Constants;
+
+
+
+public class Browsers {
+public static final Logger logger = Logger.getLogger(Browsers.class.getName());
+	
+	public WebDriver getWebDriver() throws IOException {
+		WebDriver driver = null;
+		
+		logger.info("===== " + Constants.BROWSER_NAME + " browser will be launching =====");
+		
+		switch(Constants.BROWSER_NAME.toLowerCase()) {
+		case "chrome":
+			return getChromeDriver();
+		case "edge":
+			return getEdgeDriver();
+		case "remote":
+            return getRemoteDriver();
+		default:
+			logger.info(Constants.BROWSER_NAME + " browser not supported.");
+			break;
+		}
+		return driver;
+	}
+	
+	/**
+	 * This method return the driver for chrome browser
+	 * @return driver
+	 */
+	public WebDriver getChromeDriver() {
+//		System.setProperty("webdriver.chrome.driver", Commons.getDriversPath()+
+//				Constants.FILE_SEPARATOR+"chromedriver.exe");
+//		ChromeOptions options= new ChromeOptions();
+//		if(Constants.HEADLESS_MODE.equalsIgnoreCase("true")) {
+//			options.addArguments("--headless", "--window-size=1920,1200");
+//		}
+//
+//		return new ChromeDriver(options);
+		System.setProperty("webdriver.chrome.driver",
+				"D:\\app\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
+		ChromeOptions Options= new ChromeOptions();
+		ChromeDriver driver = new ChromeDriver(Options);
+		return driver;
+	}
+	
+	
+	/**
+	 * This method return the driver for edge browser
+	 * @return driver
+	 */
+	public WebDriver getEdgeDriver() {
+		
+		return new EdgeDriver();
+	}	
+	
+	/**
+	 * This method returns the driver path with extension, 
+	 * e.g. for windows it will return driver path with .exe extension
+	 * @param driverName
+	 * @return driverPath
+	 */
+	public String getDriverPathWithExtension(String driverName) {
+		if(Constants.OPERATING_SYSTEM.toLowerCase().contains("win")) {
+			return Constants.DRIVERS_PATH + driverName + ".exe";
+		} 
+		return Constants.DRIVERS_PATH;
+	}
+	
+	public WebDriver getRemoteDriver() throws MalformedURLException {
+		WebDriver driver = null;
+		DesiredCapabilities cap= new  DesiredCapabilities();
+		cap.setCapability("browserVersion", "114.0");
+		cap.setCapability("platformName", "LINUX");
+
+
+		ChromeOptions options= new ChromeOptions();
+		options.addArguments("--no-sandbox");
+
+		options.addArguments("--disable-dev-shm-usage");
+
+		try {
+			driver=new RemoteWebDriver(new URL("https://seleniumgrid.cares.cwds.ca.gov/"), cap);
+		}
+		catch(MalformedURLException e) { 
+			logger.error(e.getMessage());
+		}
+
+		logger.info( " line 93 done");
+		return driver;
+
+
+	}
+}
