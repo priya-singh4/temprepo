@@ -42,64 +42,64 @@ public class TestRunSettings
     //TestInitialization
     public static boolean isTestInitialized = false;
     public static boolean isParallelExecution = false;
-    public static Integer ParallelNodesCount = 1;
+    public static Integer parallelNodesCount = 1;
 
     //Environment Settings
-    public static String URL = "";
-    public static String ProjectName = "";
-    public static String Release = "";
-    public static String Environment = "";
-    public static String TestRunName = "";
-    public static String ExecutedBy = "";
-    public static String Browser = "";
-    public static String BrowserLocation = "";
-    public static boolean MaximizedMode = false;
+    public static String url = "";
+    public static String projectName = "";
+    public static String release = "";
+    public static String environment = "";
+    public static String testRunName = "";
+    public static String executedBy = "";
+    public static String browser = "";
+    public static String browserLocation = "";
+    public static boolean maximizedMode = false;
     public static boolean isSnapshotForAllPass = false;
     public static boolean isFullPageScreenshot = false;
-    public static Integer PageLoadTimeout = 60;
-    public static Integer ElementTimeout = 60;
-    public static Integer ElementTimeoutLongWait = 120;
+    public static Integer pageLoadTimeout = 60;
+    public static Integer elementTimeout = 60;
+    public static Integer elementTimeoutLongWait = 120;
     public static String appDate = "";
-    public static boolean ClearCache = false;
-    public static String CaptureTimeTravelDate="";
-    public static String UBTT="";
-    public static String AccountNumber="";
-    public static String CaptureUIPerformance="";
+    public static boolean clearCache = false;
+    public static String captureTimeTravelDate="";
+    public static String ubtt="";
+    public static String accountNumber="";
+    public static String captureUIPerformance="";
     
     
 
     //Artifacts Location Setup
-    public static String TestDataMappingSheetName_CS = "";
-    public static String TestDataLocation_CS = "/CS";
+    public static String testDataMappingSheetNameCs = "";
+    public static String testDataLocationCs = "/CS";
 
     //pdf
 	
-	public static String TargetPDFfile = "TargetPDFfile";
-	public static String PdfExtension = "PdfExtension";
-	public static String EditedPDFFile = "EditedPDFFile";
-	public static String SourcePDFfile = "SourcePDFfile";
-	public static String Resultfile = "Resultfile";
-	public static String TextFile = "TextFile";
-	public static String PSfileoutpath = "PSfileoutpath";
-	public static String SourceTextFile = "SourceTextFile";
-	public static String TargetTextFile = "TargetTextFile";
-	public static String ReplacedTextFile = "ReplacedTextFile";
-	public static String SourceTextFile_Muscle = "SourceTextFile_Muscle";
-	public static String SourceTextFile_HnF = "SourceTextFile_HnF";
-	public static String SourceTextFile_Neuro = "SourceTextFile_Neuro";
-	public static String SourcePDFfile_Muscle = "SourcePDFfile_Muscle";
-	public static String SourcePDFfile_HnF = "SourcePDFfile_HnF";
-	public static String SourcePDFfile_Neuro = "SourcePDFfile_Neuro";
+	public static String targetPDFfile = "TargetPDFfile";
+	public static String pdfExtension = "PdfExtension";
+	public static String editedPDFFile = "EditedPDFFile";
+	public static String sourcePDFfile = "SourcePDFfile";
+	public static String resultfile = "Resultfile";
+	public static String textFile = "TextFile";
+	public static String psFileoutpath = "PSfileoutpath";
+	public static String sourceTextFile = "SourceTextFile";
+	public static String targetTextFile = "TargetTextFile";
+	public static String replacedTextFile = "ReplacedTextFile";
+	public static String sourceTextFileMuscle = "SourceTextFile_Muscle";
+	public static String sourceTextFileHnF = "SourceTextFile_HnF";
+	public static String sourceTextFileNeuro = "SourceTextFile_Neuro";
+	public static String sourcePdfFileMuscle = "SourcePDFfile_Muscle";
+	public static String sourcePdfFileHnF = "SourcePDFfile_HnF";
+	public static String SourcePdfFileNeuro = "SourcePDFfile_Neuro";
 	public static boolean replaceExistingSnapshotForAllPass=false;
 	
 	//
-    public static String UploadDocumentPath = "DocUpload";
+    public static String uploadDocumentPath = "DocUpload";
     
     
   //DB Validation
-  	public static String DBDetailedValidationFileName="";
-  	public static String DBDetailedValidationLocation="";
-  	public static String CR_DBDetailedValidationFileName="";
+  	public static String dbDetailedValidationFileName="";
+  	public static String dbDetailedValidationLocation="";
+  	public static String crDbDetailedValidationFileName="";
 
     //Result  Location Setup
     public static String ResultsFolderPath = "";
@@ -125,92 +125,92 @@ public class TestRunSettings
 
 
     //Location for Browser in OS
-    public static String FireFoxLocation = "";
-    public static String IEDriverLocation = "";
-    public static String OperaLocation = "";
+    public static String fireFoxLocation = "";
+    public static String ieDriverLocation = "";
+    public static String operaLocation = "";
 
 
 
     public static String interfaceSheetDetails;
-    public static String ExcelSheetExtension;
-    public static String XMLExtension;
-    public static String JSONExtension;
-    public static String CommonMockSheetName;
-    public static String UseCommonMockSheet;
-    public static String MockSheetName;
-    public static String HeaderRepositorySheetName;
-    public static String HeaderRepository;
-    public static String ResponseSheetPath;
-    public static Integer DefaultServiceTimeout;
-    public static String ResultsPath;
-    public static String RequestFolderPath;
-    public static String ResponseFolderPath;
-    public static String ExcelFileName;
-    public static boolean GenerateExcelReport;
-    public static String MockTemplateLocation;
-    public static String DomainName;
+    public static String excelSheetExtension;
+    public static String xmlExtension;
+    public static String jsonExtension;
+    public static String commonMockSheetName;
+    public static String useCommonMockSheet;
+    public static String mockSheetName;
+    public static String headerRepositorySheetName;
+    public static String headerRepository;
+    public static String responseSheetPath;
+    public static Integer defaultServiceTimeout;
+    public static String resultsPath;
+    public static String requestFolderPath;
+    public static String responseFolderPath;
+    public static String excelFileName;
+    public static boolean generateExcelReport;
+    public static String mockTemplateLocation;
+    public static String domainName;
 
 
     //Capabilities Config
-    public static HashMap<String, HashMap<String, String>> DictCapabilities = new HashMap<String, HashMap<String, String>>();
+    public static HashMap<String, HashMap<String, String>> dictCapabilities = new HashMap<String, HashMap<String, String>>();
     public static boolean isDriverOptionsEnabled = false;
 
 
     //WebDrivers
     public static WebDriver driver;
-    public static HashMap<Integer, WebDriver> DictWebDriver = new HashMap<Integer, WebDriver>();
+    public static HashMap<Integer, WebDriver> dictWebDriver = new HashMap<Integer, WebDriver>();
 
     //AndroidDriver
-    public static AndroidDriver<AndroidElement> ADriver;
-    public static HashMap<Integer, AndroidDriver<AndroidElement>> DictADriver = new HashMap<Integer, AndroidDriver<AndroidElement>>();
+    public static AndroidDriver<AndroidElement> aDriver;
+    public static HashMap<Integer, AndroidDriver<AndroidElement>> dictAdriver = new HashMap<Integer, AndroidDriver<AndroidElement>>();
 
 
     //IOSDriver
-    public static IOSDriver<IOSElement> IDriver;
-    public static HashMap<Integer, IOSDriver<IOSElement>> DictIDriver = new HashMap<Integer, IOSDriver<IOSElement>>();
+    public static IOSDriver<IOSElement> iDriver;
+    public static HashMap<Integer, IOSDriver<IOSElement>> dictIDriver = new HashMap<Integer, IOSDriver<IOSElement>>();
 
 
-    public static HashMap<String, HashMap<String,String>> MasterInterfaceSheet = new HashMap<String, HashMap<String, String>>();
+    public static HashMap<String, HashMap<String,String>> masterInterfaceSheet = new HashMap<String, HashMap<String, String>>();
 
 
-	public static String ExcelFilepath;
-	public static String UIPerfFileName;
+	public static String excelFilepath;
+	public static String uiPerfFileName;
 
 	//DB Validations
-	public static String DBValidationFileName;
-	public static String DBValidationSheetName;
-	public static String DBConnectionStrings;
+	public static String dbValidationFileName;
+	public static String dbValidationSheetName;
+	public static String dbConnectionStrings;
 	public static  String StaticDataFileName = "";
 
-	public static String StaticDataSheetName="";
+	public static final String staticDataSheetName="";
 
 	//ConfigLocation
-	public static String ConfigLocation;
+	public static String configLocation;
 
 
 	//API Config
-	public static String APIConfigFileName;
+	public static String apiConfigFileName;
 
 
 
 //	ExcelDriven TestCases
-	public static String TestScenarioFilePath;
-	public static String TestScenarioFileName;
-	public static String TestScenarioSheetName;
-	public static String TestCasesFilePath;
-	public static int ParallelThreadCount;
+	public static String testScenarioFilePath;
+	public static String testScenarioFileName;
+	public static String testScenarioSheetName;
+	public static String testCasesFilePath;
+	public static int parallelThreadCount;
 
 	//Temp Results
-	public static String TempExcelTestCaseResults;
-	public static String TempXMLTestCaseResults;
-	public static String TempJSONTestCaseResults;
+	public static String tempExcelTestCaseResults;
+	public static String tempXmlTestCaseResults;
+	public static String tempJsonTestCaseResults;
 
 
-    public static String TestDataMappingSheetName_En = "";
-	public static String TestDataMappingSheetName_SD = "";
+    public static String testDataMappingSheetNameEn = "";
+	public static String testDataMappingSheetNameSd = "";
 	public static HashMap<String, String[]> adaResultsMap = new HashMap<>();
 	
 	
 	public static HashMap<String, String> UIPerformanceResultsMap= new HashMap<String, String>();
-	public static String AdatoolPath="";
+	public static String adaToolPath="";
 }
