@@ -1,0 +1,24 @@
+	WebDriver driver = null;
+
+             DesiredCapabilities cap= new  DesiredCapabilities();
+
+             cap.setCapability("browserVersion", "128.0");
+
+             cap.setCapability("browserName", "chrome");
+
+             cap.setCapability("platformName", "linux");
+	   ChromeOptions options= new ChromeOptions();
+
+             options.addArguments("--no-sandbox");
+
+ 
+
+             options.addArguments("--disable-dev-shm-usage");
+
+ 
+
+             try {
+
+                    driver=new RemoteWebDriver(new URL(https://seleniumgrid.cares.cwds.ca.gov/), cap);
+
+             }
