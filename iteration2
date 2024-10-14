@@ -1,0 +1,28 @@
+	
+		    	login.processLoginNew(testCaseParam, "2","1", "LOGIN_USER");
+				home.navigateToAppMenuPage("Screenings",testCaseParam, "2", "1");				
+//				screeningPage.cwsPolicyManualValidation(testCaseParam, "2","1");		
+//				screeningPage.navigateToListView("Screenings", "Approved Screenings", testCaseParam, "2", "1");
+//				screeningPage.navigateToListView("Screenings", "Current Screenings", testCaseParam, "2", "1");
+				screeningDetails.clickNewScreening(testCaseParam, "2","1");
+		    	screeningDetails.enterScreeningDetails(testCaseParam, "2","1");
+		    	screeningDetails.submitScreeningDetails(testCaseParam, "2","1");
+				screeningPerson.navigateToScreeningPersons(testCaseParam, "2", "1");
+		    	screeningPerson.addScreeningPerson(testCaseParam, "2" , "1");
+		    	screeningPerson.addScreeningPerson(testCaseParam, "2" , "2");
+	            tribalInquiryAndCollaboration.addTribalInquiryAndCollaborationInfo(testCaseParam, "2","1");
+	       
+	            //validate person added in newScreeningPerson	
+//	            ScreeningValidatePerson validatePerson = new ScreeningValidatePerson(driver, testCaseParam);
+//	            validatePerson.validatePersonDetails(testCaseParam, scriptIteration, "1");
+	           
+				approvalandAuditHistory.navigateToAuditHistory(testCaseParam, "2", "1");
+				approvalandAuditHistory.verifyHeaderColumnsInTable("Screening History", testCaseParam, "2", "1");
+				screeningContact.addScreeningContactLog(testCaseParam, "2", "1");
+				eRRDoc.generateERRDoc(testCaseParam,"2", "1");
+			
+				screeningDetails.navigateToScreeningDetails(testCaseParam, "2", "2");
+				screeningDetails.editReasonForTheCall(testCaseParam, "2", "2");
+				screeningDetails.verifyScreeningDetails(testCaseParam, "2", "2");
+				screeningDetails.editCallerType(testCaseParam, "2", "2");
+	     		objLogout.processLogout(testCaseParam, "2", "1");
