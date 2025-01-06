@@ -1,0 +1,112 @@
+{
+    "title": "ScreeningDetails6jan",
+    "steps": [
+        {
+            "type": "navigate",
+            "url": "https://cacwds--v1sit.sandbox.lightning.force.com/lightning/o/Screening__c/list?filterName=__Recent",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://cacwds--v1sit.sandbox.lightning.force.com/lightning/o/Screening__c/list?filterName=__Recent",
+                    "title": "Recently Viewed | Screenings | Salesforce"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "new",
+            "selectors": [
+                "xpath///*[@id=\"brandBand_1\"]/div/div/div/div/div[1]/div[1]/div[2]/ul/li/a/div"
+            ],
+            "offsetX": 24.6805419921875,
+            "offsetY": 18.9305419921875
+        },
+        {
+            "type": "click",
+            "target": "narrativeClick",
+            "selectors": [
+                "xpath///*[@id=\"1736151328646226-310\"]/slot/div/div/div[1]/div/c-kreator-input-rich-text-area/lightning-input-rich-text/div/div/div/div[3]/div"
+            ],
+            "offsetX": 369.298583984375,
+            "offsetY": 36.545135498046875
+        },
+        {
+            "type": "change",
+            "target": "narrativeText",
+            "selectors": [
+                "xpath///*[@id=\"1736151328646226-310\"]/slot/div/div/div[1]/div/c-kreator-input-rich-text-area/lightning-input-rich-text/div/div/div/div[2]/div[1]"
+            ],
+            "value": "testdeatila"
+        },
+        {
+            "type": "click",
+            "target": "callDateTime",
+            "selectors": [
+                "xpath///*[@id=\"input-350\"]"
+            ],
+            "offsetX": 231.40969848632812,
+            "offsetY": 21.111083984375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "xpath///*[@id=\"1736151328646226-310\"]/slot/div/div/div[3]/div/div/div[1]/div[1]/c-kreator-input-date-time/lightning-input/lightning-datetimepicker/div/fieldset/div[1]/div/div/lightning-datepicker/div[1]/div/lightning-calendar/div/lightning-focus-trap/slot/button"
+                ]
+            ],
+            "offsetY": 12.031234741210938,
+            "offsetX": 34.017333984375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "xpath///*[@id=\"combobox-button-359\"]"
+                ]
+            ],
+            "offsetY": 18.111083984375,
+            "offsetX": 79.7291259765625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "xpath///*[@id=\"combobox-button-359-1-359\"]/span[2]/span"
+                ]
+            ],
+            "offsetY": 8.930549621582031,
+            "offsetX": 98.53466796875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "xpath///*[@id=\"input-367\"]"
+                ]
+            ],
+            "offsetY": 18.916656494140625,
+            "offsetX": 370.4096984863281
+        },
+        {
+            "type": "change",
+            "target": "screeningName",
+            "selectors": [
+                "xpath///*[@id=\"input-367\"]"
+            ],
+            "value": "name"
+        },
+        {
+            "type": "click",
+            "target": "callerTypeRB",
+            "selectors": [
+                "xpath///*[@id=\"1736151328677118-372\"]/slot/div/div/div[1]/div/c-kreator-input-selection-radio/lightning-radio-group/fieldset/div/span[3]/label/span[1]"
+            ],
+            "offsetX": 11.1041259765625,
+            "offsetY": 7.760406494140625
+        }
+    ]
+}
