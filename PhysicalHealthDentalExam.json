@@ -1,0 +1,255 @@
+{
+    "title": "PhysicalHealthDentalExam",
+    "steps": [
+        {
+            "type": "navigate",
+            "url": "https://cacwds--v1sit.sandbox.lightning.force.com/lightning/r/Contact/003cp00000G8N6IAAV/view",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://cacwds--v1sit.sandbox.lightning.force.com/lightning/r/Contact/003cp00000G8N6IAAV/view",
+                    "title": "sharan Sharan | Person | Salesforce"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "DentalExam",
+            "selectors": [
+                "xpath///*[@id=\"brandBand_4\"]/div/c-cares-generic-default-record-type-screen/lightning-card/article/div[2]/slot/p/c-cares-custom-radio-group-button/div/fieldset/div/div/div[2]/label/span[1]"
+            ],
+            "offsetX": 6.906246185302734,
+            "offsetY": 11.1180419921875
+        },
+        {
+            "type": "click",
+            "target": "Next",
+            "selectors": [
+                "xpath///*[@id=\"brandBand_4\"]/div/c-cares-generic-default-record-type-screen/lightning-card/article/div[3]/slot/div/c-kreator-action-buttons[2]/button"
+            ],
+            "offsetX": 51.298583984375,
+            "offsetY": 14.631927490234375
+        },
+        {
+            "type": "click",
+            "target": "DentalExamTypeDD",
+            "selectors": [
+                "xpath///*[@id=\"combobox-button-1206\"]"
+            ],
+            "offsetX": 330.4096984863281,
+            "offsetY": 24.5867919921875
+        },
+        {
+            "type": "click",
+            "target": "DentalExamTypeDdValue",
+            "selectors": [
+                "xpath///*[@id=\"combobox-button-1206-1-1206\"]/span[2]/span"
+            ],
+            "offsetX": 198.204833984375,
+            "offsetY": 15.32635498046875
+        },
+        {
+            "type": "click",
+            "target": "ExamDate",
+            "selectors": [
+                "xpath///*[@id=\"input-1211\"]"
+            ],
+            "offsetX": 486.7291259765625,
+            "offsetY": 15.5867919921875
+        },
+        {
+            "type": "click",
+            "target": "todayDate",
+            "selectors": [
+                "xpath///*[@id=\"1736167448234166-1195\"]/slot/div/div/div/div[2]/c-kreator-input-date/lightning-input/lightning-datepicker/div[1]/div/lightning-calendar/div/lightning-focus-trap/slot/button"
+            ],
+            "offsetX": 18.34716796875,
+            "offsetY": 14.65625
+        },
+        {
+            "type": "change",
+            "target": "diagnosedCondition",
+            "selectors": [
+                "xpath///*[@id=\"input-1216\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "change",
+            "target": "treatmentReceived",
+            "selectors": [
+                "xpath///*[@id=\"input-1219\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "change",
+            "target": "providerName",
+            "selectors": [
+                "xpath///*[@id=\"input-1222\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "xpath///*[@id=\"input-1225\"]"
+                ]
+            ],
+            "offsetY": 20.423599243164062,
+            "offsetX": 60.7291259765625
+        },
+        {
+            "type": "change",
+            "value": "1",
+            "selectors": [
+                [
+                    "xpath///*[@id=\"input-1225\"]"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "change",
+            "target": "providerPhone",
+            "selectors": [
+                "xpath///*[@id=\"input-1225\"]"
+            ],
+            "value": "1234567890"
+        },
+        {
+            "type": "click",
+            "target": "referralNeededDD",
+            "selectors": [
+                "xpath///*[@id=\"combobox-button-1228\"]"
+            ],
+            "offsetX": 415.4096984863281,
+            "offsetY": 15.34375
+        },
+        {
+            "type": "click",
+            "target": "referralNeededDdValue",
+            "selectors": [
+                "xpath///*[@id=\"combobox-button-1228-2-1228\"]/span[2]"
+            ],
+            "offsetX": 52.204833984375,
+            "offsetY": 9.225677490234375
+        },
+        {
+            "type": "click",
+            "target": "dateReported",
+            "selectors": [
+                "xpath///*[@id=\"input-1236\"]"
+            ],
+            "offsetX": 485.7291259765625,
+            "offsetY": 15.11456298828125
+        },
+        {
+            "type": "click",
+            "target": "todayDate",
+            "selectors": [
+                "xpath///*[@id=\"1736167448234166-1195\"]/slot/div/div/div/div[8]/c-kreator-input-date/lightning-input/lightning-datepicker/div[1]/div/lightning-calendar/div/lightning-focus-trap/slot/button"
+            ],
+            "offsetX": 23.34716796875,
+            "offsetY": 15.190948486328125
+        },
+        {
+            "type": "click",
+            "target": "nextScheduledDate",
+            "selectors": [
+                "xpath///*[@id=\"input-1241\"]"
+            ],
+            "offsetX": 478.4096984863281,
+            "offsetY": 15.031219482421875
+        },
+        {
+            "type": "click",
+            "target": "todayDateSelect",
+            "selectors": [
+                "xpath///*[@id=\"1736167448234166-1195\"]/slot/div/div/div/div[9]/c-kreator-input-date/lightning-input/lightning-datepicker/div[1]/div/lightning-calendar/div/lightning-focus-trap/slot/button"
+            ],
+            "offsetX": 17.03466796875,
+            "offsetY": 11.107635498046875
+        },
+        {
+            "type": "click",
+            "target": "healthNeedDD",
+            "selectors": [
+                "xpath///*[@id=\"combobox-1244\"]"
+            ],
+            "offsetX": 235.6180419921875,
+            "offsetY": 19.920135498046875
+        },
+        {
+            "type": "click",
+            "target": "healthNeedDDValue",
+            "selectors": [
+                "xpath///*[@id=\"uniqueKey1-1244\"]/span/span[2]/span[1]"
+            ],
+            "offsetX": 55.5242919921875,
+            "offsetY": 7.815948486328125
+        },
+        {
+            "type": "click",
+            "target": "confidentialCb",
+            "selectors": [
+                "xpath///*[@id=\"1736167448234166-1195\"]/slot/div/div/div/div[11]/c-kreator-input-selection-checkbox/lightning-input/lightning-primitive-input-checkbox/div[1]/span/label/span[1]"
+            ],
+            "offsetX": 6.409698486328125,
+            "offsetY": 10.638885498046875
+        },
+        {
+            "type": "click",
+            "target": "hepCb",
+            "selectors": [
+                "xpath///*[@id=\"1736167448234166-1195\"]/slot/div/div/div/div[12]/c-kreator-input-selection-checkbox/lightning-input/lightning-primitive-input-checkbox/div[1]/span/label/span[1]"
+            ],
+            "offsetX": 9.7291259765625,
+            "offsetY": 8.638885498046875
+        },
+        {
+            "type": "change",
+            "target": "summary",
+            "selectors": [
+                "xpath///*[@id=\"input-1254\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "click",
+            "target": "relatedHealthRecord",
+            "selectors": [
+                "xpath///*[@id=\"combobox-1255\"]"
+            ],
+            "offsetX": 145.6180419921875,
+            "offsetY": 17.232635498046875
+        },
+        {
+            "type": "change",
+            "target": "additionalInfo",
+            "selectors": [
+                "xpath///*[@id=\"input-1268\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "change",
+            "target": "hepDesciption",
+            "selectors": [
+                "xpath///*[@id=\"input-1342\"]"
+            ],
+            "value": "test"
+        },
+        {
+            "type": "click",
+            "target": "saveBtn",
+            "selectors": [
+                "xpath///*[@id=\"brandBand_5\"]/div/div/div/div/div[2]/span/c-cares_-generic-l-w-c-container/c-cares_screen-health-info-dental-exams/div/div/div/div[2]/div/div[2]/div/div/div[2]/c-kreator-action-buttons/button/div/div"
+            ],
+            "offsetX": 27.5311279296875,
+            "offsetY": 11.756927490234375
+        }
+    ]
+}

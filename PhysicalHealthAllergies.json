@@ -1,0 +1,214 @@
+{
+    "title": "PhysicalHealthAllergies",
+    "steps": [
+        {
+            "type": "navigate",
+            "url": "https://cacwds--v1sit.sandbox.lightning.force.com/lightning/r/Contact/003cp00000G8N6IAAV/view",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://cacwds--v1sit.sandbox.lightning.force.com/lightning/r/Contact/003cp00000G8N6IAAV/view",
+                    "title": "sharan Sharan | Person | Salesforce"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "newBtn",
+            "selectors": [
+                "xpath///*[@id=\"brandBand_23\"]/div/div/div/one-record-home-flexipage2/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-cares_-contact_-page___-contact___-v-i-e-w___-l-m-t___1734703443000/forcegenerated-flexipage_cares_contact_page_contact__view_js___lmt___1733820487000/record_flexipage-desktop-record-page-decorator/div[1]/records-record-layout-event-broker/slot/slot/flexipage-aura-template-wrapper/div/div/div[2]/div[2]/div/div/forcegenerated-flexipageregion_cares_contact_page_center08_contact__view_js/flexipage-component2[2]/slot/lst-dynamic-related-list/article/laf-progressive-container/slot/lst-dynamic-related-list-with-user-prefs/lst-related-list-view-manager/lst-common-list-internal/lst-list-view-manager-header/div/div[1]/div[3]/div/runtime_platform_actions-actions-ribbon/ul/li/runtime_platform_actions-action-renderer/runtime_platform_actions-executor-page-reference/slot/slot/lightning-button/button"
+            ],
+            "offsetX": 13.704833984375,
+            "offsetY": 14.458328247070312
+        },
+        {
+            "type": "click",
+            "target": "allergiesRB",
+            "selectors": [
+                "xpath///*[@id=\"brandBand_24\"]/div/c-cares-generic-default-record-type-screen/lightning-card/article/div[2]/slot/p/c-cares-custom-radio-group-button/div/fieldset/div/div/div[1]/label/span[1]"
+            ],
+            "offsetX": 6.906246185302734,
+            "offsetY": 7.986083984375
+        },
+        {
+            "type": "click",
+            "target": "nextBtn",
+            "selectors": [
+                "xpath///*[@id=\"brandBand_24\"]/div/c-cares-generic-default-record-type-screen/lightning-card/article/div[3]/slot/div/c-kreator-action-buttons[2]/button/div/div"
+            ],
+            "offsetX": 12.3089599609375,
+            "offsetY": 13.631927490234375
+        },
+        {
+            "type": "click",
+            "target": "allergyTypeDD",
+            "selectors": [
+                "xpath///*[@id=\"combobox-button-15083\"]"
+            ],
+            "offsetX": 392.4096984863281,
+            "offsetY": 7.5867919921875
+        },
+        {
+            "type": "click",
+            "target": "allergyTypeDDValue",
+            "selectors": [
+                "xpath///*[@id=\"combobox-button-15083-4-15083\"]/span[2]"
+            ],
+            "offsetX": 163.204833984375,
+            "offsetY": 1.5347137451171875
+        },
+        {
+            "type": "click",
+            "target": "dateofDiagnosis",
+            "selectors": [
+                "xpath///*[@id=\"input-15088\"]"
+            ],
+            "offsetX": 485.7291259765625,
+            "offsetY": 17.5867919921875
+        },
+        {
+            "type": "click",
+            "target": "todayDateSelect",
+            "selectors": [
+                "xpath///*[@id=\"173616511302940-15072\"]/slot/div/div/div/div[2]/c-kreator-input-date/lightning-input/lightning-datepicker/div[1]/div/lightning-calendar/div/lightning-focus-trap/slot/button"
+            ],
+            "offsetX": 30.34716796875,
+            "offsetY": 17.65625
+        },
+        {
+            "type": "change",
+            "target": "providerName",
+            "selectors": [
+                "xpath///*[@id=\"input-15093\"]"
+            ],
+            "value": "auto"
+        },
+        {
+            "type": "change",
+            "target": "providerPhone",
+            "selectors": [
+                "xpath///*[@id=\"input-15096\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "change",
+            "target": "eplPen",
+            "selectors": [
+                "xpath///*[@id=\"input-15099\"]"
+            ],
+            "value": "no"
+        },
+        {
+            "type": "change",
+            "target": "medicalOfficeInfo",
+            "selectors": [
+                "xpath///*[@id=\"input-15102\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "change",
+            "target": "sourceName",
+            "selectors": [
+                "xpath///*[@id=\"input-15108\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "change",
+            "target": "sourceRelationship",
+            "selectors": [
+                "xpath///*[@id=\"input-15114\"]"
+            ],
+            "value": "parent"
+        },
+        {
+            "type": "click",
+            "target": "healthNeedDD",
+            "selectors": [
+                "xpath///*[@id=\"combobox-15115\"]"
+            ],
+            "offsetX": 464.298583984375,
+            "offsetY": 10.256927490234375
+        },
+        {
+            "type": "click",
+            "target": "healthNeedDDValue",
+            "selectors": [
+                "xpath///*[@id=\"uniqueKey1-15115\"]/span/span[2]/span[1]"
+            ],
+            "offsetX": 59.204833984375,
+            "offsetY": 10.152740478515625
+        },
+        {
+            "type": "click",
+            "target": "hepAlertCB",
+            "selectors": [
+                "xpath///*[@id=\"173616511302940-15072\"]/slot/div/div/div/div[10]/c-kreator-input-selection-checkbox/lightning-input/lightning-primitive-input-checkbox/div[1]/span/label/span[1]"
+            ],
+            "offsetX": 10.7291259765625,
+            "offsetY": 9.354156494140625
+        },
+        {
+            "type": "click",
+            "target": "confedentialCB",
+            "selectors": [
+                "xpath///*[@id=\"173616511302940-15072\"]/slot/div/div/div/div[11]/c-kreator-input-selection-checkbox/lightning-input/lightning-primitive-input-checkbox/div[1]/span/label/span[1]"
+            ],
+            "offsetX": 7.409698486328125,
+            "offsetY": 12.420135498046875
+        },
+        {
+            "type": "change",
+            "target": "summary",
+            "selectors": [
+                "xpath///*[@id=\"input-15125\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "click",
+            "target": "relatedHealthRecordDD",
+            "selectors": [
+                "xpath///*[@id=\"combobox-15126\"]"
+            ],
+            "offsetX": 397.298583984375,
+            "offsetY": 14.2430419921875
+        },
+        {
+            "type": "click",
+            "target": "relatedHealthRecordDDValue",
+            "selectors": [
+                "xpath///*[@id=\"combobox-15126\"]"
+            ],
+            "offsetX": 477.298583984375,
+            "offsetY": 13.2430419921875
+        },
+        {
+            "type": "change",
+            "target": "treatmentPlan",
+            "selectors": [
+                "xpath///*[@id=\"input-15140\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "change",
+            "target": "hepAlertDescription",
+            "selectors": [
+                "xpath///*[@id=\"input-15212\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "click",
+            "target": "saveBtn",
+            "selectors": [
+                "xpath///*[@id=\"brandBand_25\"]/div/div/div/div/div[2]/span/c-cares_-generic-l-w-c-container/c-cares_screen-health-info-allergy/div/div/div/div[2]/div/div[2]/div/div/div[2]/c-kreator-action-buttons/button/div/div"
+            ],
+            "offsetX": 5.5311279296875,
+            "offsetY": 20.3992919921875
+        }
+    ]
+}
