@@ -1,0 +1,245 @@
+{
+    "title": "physicalhealth7jan",
+    "steps": [
+        {
+            "type": "navigate",
+            "url": "https://cacwds--v1sit.sandbox.lightning.force.com/lightning/r/Contact/0033S000009FiGXQA0/view",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://cacwds--v1sit.sandbox.lightning.force.com/lightning/r/Contact/0033S000009FiGXQA0/view",
+                    "title": "John Shubham willey | Person | Salesforce"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "newBtn",
+            "selectors": [
+                "xpath///*[@id=\"brandBand_2\"]/div/div/div/one-record-home-flexipage2/forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-cares_-contact_-page___-contact___-v-i-e-w___-l-m-t___1733751311000/forcegenerated-flexipage_cares_contact_page_contact__view_js___lmt___1733820487000/record_flexipage-desktop-record-page-decorator/div[1]/records-record-layout-event-broker/slot/slot/flexipage-aura-template-wrapper/div/div/div[2]/div[2]/div/div/forcegenerated-flexipageregion_cares_contact_page_center08_contact__view_js/flexipage-component2[2]/slot/lst-dynamic-related-list/article/laf-progressive-container/slot/lst-dynamic-related-list-with-user-prefs/lst-related-list-view-manager/lst-common-list-internal/lst-list-view-manager-header/div/div[1]/div[3]/div/runtime_platform_actions-actions-ribbon/ul/li/runtime_platform_actions-action-renderer/runtime_platform_actions-executor-page-reference/slot/slot/lightning-button/button"
+            ],
+            "offsetX": 11.7117919921875,
+            "offsetY": 13.15625
+        },
+        {
+            "type": "click",
+            "target": "hearingRb",
+            "selectors": [
+                "xpath///*[@id=\"brandBand_17\"]/div/c-cares-generic-default-record-type-screen/lightning-card/article/div[2]/slot/p/c-cares-custom-radio-group-button/div/fieldset/div/div/div[3]/label/span[1]"
+            ],
+            "offsetX": 5.906246185302734,
+            "offsetY": 12.236083984375
+        },
+        {
+            "type": "click",
+            "target": "nextBtn",
+            "selectors": [
+                "xpath///*[@id=\"brandBand_17\"]/div/c-cares-generic-default-record-type-screen/lightning-card/article/div[3]/slot/div/c-kreator-action-buttons[2]/button/div/div"
+            ],
+            "offsetX": 5.31591796875,
+            "offsetY": 13.40277099609375
+        },
+        {
+            "type": "click",
+            "target": "hearingTypeDD",
+            "selectors": [
+                "xpath///*[@id=\"combobox-button-3532\"]"
+            ],
+            "offsetX": 395.4096984863281,
+            "offsetY": 13.95831298828125
+        },
+        {
+            "type": "click",
+            "target": "hearningTypeDDValue",
+            "selectors": [
+                "xpath///*[@id=\"combobox-button-3532-3-3532\"]/span[2]/span"
+            ],
+            "offsetX": 87.204833984375,
+            "offsetY": 7.7222137451171875
+        },
+        {
+            "type": "change",
+            "target": "mmedicalOfficeInfo",
+            "selectors": [
+                "xpath///*[@id=\"input-3537\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "click",
+            "target": "diagnoseDate",
+            "selectors": [
+                "xpath///*[@id=\"input-3540\"]"
+            ],
+            "offsetX": 476.4096984863281,
+            "offsetY": 17.08331298828125
+        },
+        {
+            "type": "change",
+            "target": "providerName",
+            "selectors": [
+                "xpath///*[@id=\"input-3545\"]"
+            ],
+            "value": "auto"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "xpath///*[@id=\"input-3548\"]"
+                ]
+            ],
+            "offsetY": 9.2117919921875,
+            "offsetX": 105.40969848632812
+        },
+        {
+            "type": "change",
+            "value": "1",
+            "selectors": [
+                [
+                    "xpath///*[@id=\"input-3548\"]"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "change",
+            "target": "providerPhone",
+            "selectors": [
+                "xpath///*[@id=\"input-3548\"]"
+            ],
+            "value": "1234567890"
+        },
+        {
+            "type": "change",
+            "target": "sourceName",
+            "selectors": [
+                "xpath///*[@id=\"input-3554\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "click",
+            "target": "dateReported",
+            "selectors": [
+                "xpath///*[@id=\"input-3560\"]"
+            ],
+            "offsetX": 479.4096984863281,
+            "offsetY": 15.326370239257812
+        },
+        {
+            "type": "change",
+            "target": "sourceRelationship",
+            "selectors": [
+                "xpath///*[@id=\"input-3568\"]"
+            ],
+            "value": "parent"
+        },
+        {
+            "type": "click",
+            "target": "healthNeedDD",
+            "selectors": [
+                "xpath///*[@id=\"combobox-3569\"]"
+            ],
+            "offsetX": 444.298583984375,
+            "offsetY": 15.565948486328125
+        },
+        {
+            "type": "click",
+            "target": "healthNeedDDValue",
+            "selectors": [
+                "xpath///*[@id=\"uniqueKey1-3569\"]/span/span[2]/span[1]"
+            ],
+            "offsetX": 173.204833984375,
+            "offsetY": 8.24652099609375
+        },
+        {
+            "type": "click",
+            "target": "hepAlertCB",
+            "selectors": [
+                "xpath///*[@id=\"1736240851844220-3521\"]/slot/div/div/div/div[10]/c-kreator-input-selection-checkbox/lightning-input/lightning-primitive-input-checkbox/div[1]/span/label/span[1]"
+            ],
+            "offsetX": 8.7291259765625,
+            "offsetY": 10.7742919921875
+        },
+        {
+            "type": "click",
+            "target": "functionaffectedRB",
+            "selectors": [
+                "xpath///*[@id=\"1736240851844220-3521\"]/slot/div/div/div/div[11]/c-kreator-input-selection-radio/lightning-radio-group/fieldset/div/span[2]/label/span[1]"
+            ],
+            "offsetX": 7.409698486328125,
+            "offsetY": 9.9617919921875
+        },
+        {
+            "type": "click",
+            "target": "educationAffectedRB",
+            "selectors": [
+                "xpath///*[@id=\"1736240851844220-3521\"]/slot/div/div/div/div[12]/c-kreator-input-selection-radio/lightning-radio-group/fieldset/div/span[2]/label/span[1]"
+            ],
+            "offsetX": 8.7291259765625,
+            "offsetY": 5.9617919921875
+        },
+        {
+            "type": "change",
+            "target": "additionalInfo",
+            "selectors": [
+                "xpath///*[@id=\"input-3586\"]"
+            ],
+            "value": "a"
+        },
+        {
+            "type": "change",
+            "target": "alertDescription",
+            "selectors": [
+                "xpath///*[@id=\"input-3660\"]"
+            ],
+            "value": "autotext"
+        },
+        {
+            "type": "click",
+            "target": "confedentialCB",
+            "selectors": [
+                "xpath///*[@id=\"1736240851844220-3521\"]/slot/div/div/div/div[15]/c-kreator-input-selection-checkbox/lightning-input/lightning-primitive-input-checkbox/div[1]/span/label/span[1]"
+            ],
+            "offsetX": 0.409698486328125,
+            "offsetY": 7.874969482421875
+        },
+        {
+            "type": "change",
+            "target": "summary",
+            "selectors": [
+                "xpath///*[@id=\"input-3591\"]"
+            ],
+            "value": "AUTOTEXT"
+        },
+        {
+            "type": "click",
+            "target": "relatedHealthRecordDD",
+            "selectors": [
+                "xpath///*[@id=\"combobox-3592\"]"
+            ],
+            "offsetX": 457.298583984375,
+            "offsetY": 19.4617919921875
+        },
+        {
+            "type": "click",
+            "target": "relatedHealthRecordDDValue",
+            "selectors": [
+                "xpath///*[@id=\"combobox-3592\"]"
+            ],
+            "offsetX": 473.298583984375,
+            "offsetY": 16.4617919921875
+        },
+        {
+            "type": "click",
+            "target": "saveBtn",
+            "selectors": [
+                "xpath///*[@id=\"brandBand_18\"]/div/div/div/div/div[2]/span/c-cares_-generic-l-w-c-container/c-cares_screen-health-info-hearing-imp/div/div/div/div[2]/div[2]/div/div/div[2]/c-kreator-action-buttons/button/div/div"
+            ],
+            "offsetX": 29.5311279296875,
+            "offsetY": 13.4617919921875
+        }
+    ]
+}
