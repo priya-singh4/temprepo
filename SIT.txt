@@ -1,0 +1,20 @@
+
+AWS SIT
+
+		String[] titleIV ={"AutoTitleIV_Placement_State_V1SIT@osi.ca.gov","Cares@401347563679012"};
+		loginMap.put(TITLEIVSTAFFCDSSPLACEMENT,titleIV);
+
+		String[] titleIVPlacer ={"Auto_TitleIV_Staff_Placer@osi.ca.gov","Cares@401347563679"};
+		loginMap.put("TitleIVStaffPlacer",titleIVPlacer);
+		
+		String[] h1worker ={"Auto_Hstaff1_ContraCosta_V1_SIT@nomail.ca.gov","Cares@401347563793981"};
+		loginMap.put(HLWORKERCONTRACOSTA,h1worker);
+		
+		String[] h1supervisor ={"Auto_Hsupervisor1_ContraCosta_V1_SIT@nomail.ca.gov","Cares@401347563793981"};
+		loginMap.put(HLSUPERVISORCONTRACOSTA,h1supervisor);
+		
+		String[] h1supervisor2 ={"Autohotline155_supervisor_contracosta_V1SIT@osi.ca.gov","Cares@401347563679"};
+		loginMap.put("HLSupervisorContraCosta2",h1supervisor2);
+		
+		String[] erWorker ={"auto_erworker3_contracosta_v1sit@osi.ca.gov","Cares@401347563799"};
+		loginMap.put(ERWORKERCONTRACOSTA,erWorker);
