@@ -1,0 +1,21 @@
+def calculate_counter_value(date_of_acknowledgement):
+    today = datetime.now().date()
+    date_of_ack = datetime.strptime(date_of_acknowledgement, '%Y-%m-%d').date()
+    days_elapsed = (today - date_of_ack).days
+    counter_value = 14 - days_elapsed
+    return counter_value
+
+# Date of Acknowledgement (example)
+date_of_acknowledgement = '2023-10-01'
+
+# Calculate the expected counter value
+expected_counter_value = calculate_counter_value(date_of_acknowledgement)
+
+# Locate the counter element on the webpage
+counter_element = driver.find_element_by_id('counter_id')  # Replace 'counter_id' with the actual ID
+
+# Get the counter value from the webpage
+webpage_counter_value = int(counter_element.text)
+
+# Verify the counter value
+assert expected_counter_value == webpage_counter_value, f"Expected {expected_counter_value}, but got {webpage_counter_value}"
