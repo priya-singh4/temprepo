@@ -1,0 +1,34 @@
+ // Navigate to the target webpage
+        driver.get("http://example.com");
+
+        // Date of Acknowledgement (example)
+        String dateOfAcknowledgement = "2023-10-01";
+
+        // Calculate the expected counter value
+        int expectedCounterValue = calculateCounterValue(dateOfAcknowledgement);
+
+        // Locate the counter element on the webpage
+        WebElement counterElement = driver.findElement(By.id("counter_id")); // Replace 'counter_id' with the actual ID
+
+        // Get the counter value from the webpage
+        int webpageCounterValue = Integer.parseInt(counterElement.getText());
+
+        // Verify the counter value
+        if (expectedCounterValue == webpageCounterValue) {
+            System.out.println("Counter value is correct: " + webpageCounterValue);
+        } else {
+            System.out.println("Counter value is incorrect. Expected: " + expectedCounterValue + ", but got: " + webpageCounterValue);
+        }
+
+        // Close the WebDriver
+        driver.quit();
+    }
+
+    // Function to calculate the counter value
+    public static int calculateCounterValue(String dateOfAcknowledgement) {
+        LocalDate today = LocalDate.now();
+        LocalDate dateOfAck = LocalDate.parse(dateOfAcknowledgement, DateTimeFormatter.ISO_LOCAL_DATE);
+        long daysElapsed = ChronoUnit.DAYS.between(dateOfAck, today);
+        return 14 - (int) daysElapsed;
+    }
+}
